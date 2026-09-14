@@ -447,43 +447,43 @@ media/
 ## 📸 Project Screenshots
 
 ### 🏠 Home Page
-![Home Page](Screenshots/Home.png)
+<img src="Screenshots/Home.png" alt="Home Page" width="900">
 
 ### 🛍️ Product View
-![Product View](Screenshots/Product%20view.png)
+<img src="Screenshots/Product%20view.png" alt="Product View" width="900">
 
 ### 📦 Product Details
-![Product Details](Screenshots/Product%20Des.png)
+<img src="Screenshots/Product%20Des.png" alt="Product Details" width="900">
 
 ### ➕ Add Product
-![Add Product](Screenshots/Add%20Product.png)
+<img src="Screenshots/Add%20Product.png" alt="Add Product" width="900">
 
 ### 🛒 Shopping Cart
-![Shopping Cart](Screenshots/Cart.png)
+<img src="Screenshots/Cart.png" alt="Shopping Cart" width="900">
 
 ### 💳 Checkout
-![Checkout](Screenshots/Checkout.png)
+<img src="Screenshots/Checkout.png" alt="Checkout" width="900">
 
 ### 💰 Payment
-![Payment](Screenshots/Payment.png)
+<img src="Screenshots/Payment.png" alt="Payment" width="900">
 
 ### 📦 Place Order
-![Place Order](Screenshots/Place%20Order.png)
+<img src="Screenshots/Place%20Order.png" alt="Place Order" width="900">
 
 ### 🔐 Login
-![Login](Screenshots/Login.png)
+<img src="Screenshots/Login.png" alt="Login" width="900">
 
 ### 📝 Sign Up
-![Sign Up](Screenshots/Sign%20Up.png)
+<img src="Screenshots/Sign%20Up.png" alt="Sign Up" width="900">
 
 ### ⚙️ Admin Login
-![Admin Login](Screenshots/Admin%20Login.png)
+<img src="Screenshots/Admin%20Login.png" alt="Admin Login" width="900">
 
 ### 📊 Admin Dashboard
-![Admin Dashboard](Screenshots/Admin%20Dashboard.png)
+<img src="Screenshots/Admin%20Dashboard.png" alt="Admin Dashboard" width="900">
 
-### 🛠️ Manage Products
-![Manage Product](Screenshots/Manage%20Product.png)
+### 🛠️ Manage Product
+<img src="Screenshots/Manage%20Product.png" alt="Manage Product" width="900">
 
 ## 🎓 Learning Objectives
 
