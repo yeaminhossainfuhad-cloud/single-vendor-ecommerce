@@ -455,9 +455,6 @@ media/
 ### 📦 Product Details
 ![Product Details](Screenshots/Product_Details.png)
 
-### ➕ Add Product
-![Add Product](Screenshots/Add_Product.png)
-
 ### 🛒 Shopping Cart
 ![Shopping Cart](Screenshots/Cart.png)
 
@@ -484,6 +481,9 @@ media/
 
 ### 🛠️ Manage Product
 ![Manage Product](Screenshots/Manage_Product.png)
+
+### ➕ Add Product
+![Add Product](Screenshots/Add_Product.png)
 
 
 ## 🎓 Learning Objectives
