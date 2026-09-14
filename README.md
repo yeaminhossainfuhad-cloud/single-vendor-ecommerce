@@ -449,7 +449,8 @@ media/
 ### 🏠 Home Page
 ![Home Page](Screenshots/Home.png)
 
-
+### 🛍️ Product View
+![Product View](Screenshots/Product_View.png)
 
 ### 📦 Product Details
 ![Product Details](Screenshots/Product_Details.png)
