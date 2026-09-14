@@ -1,0 +1,61 @@
+{% extends 'ecom/homebase.html' %}
+{% load static %}
+{% block content %}
+
+<style>
+    img {
+        width: 300px;
+        height: auto;
+        margin-bottom: 50px;
+    }
+    .cart{
+        width: 100px;
+        text-align: center;
+        background-color: rgb(38, 38, 40);
+        padding: 20px 60px 20px 40px;
+        color: aliceblue;
+        margin-left: 40px;
+    }
+    .cart:hover {
+        background-color: rgb(3, 217, 32);
+        color:aliceblue;
+        text-decoration: none;
+        border: 2px solid black;
+    }
+    p{
+        text-align: left !important;
+        font-size: 13px; 
+        margin-left: 20px;
+        max-width: 550px;
+    }
+</style>
+
+
+
+
+
+<div class="container my-4" style="margin-top: 150px;">
+    <div class="row my-4">
+        <div class="col-md-4">
+            <img class="img" src="{% static product.product_image.url %}" alt="product pic" height="200px" width="250px"><br>
+            <a class="cart" href="{% url 'add-to-cart' product.id  %}">
+                <span class="add-to-cart">
+                  <span class="txt"><i class="fa fa-shopping-cart"></i> Add To Cart</span>
+                </span>
+              </a>
+        </div>
+        <div class="col-md-8" style="border-left: 1px solid rgb(104, 99, 99); padding-left: 25px;">
+            <h3 style="margin-bottom: 30px;">Product Name : {{product.name}}</h3>
+            <h4>Product Category : {{product.category}}</h4>
+            <h4>Official Price : <strong>$ {{product.price}}</strong></h4>
+            <h4>Descreption :</h4>
+            <p>{{product.description|linebreaks}}</p>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+{% endblock content %}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+{% load static %}
+{% load widget_tweaks %}
+
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>contact-us</title>
+  <style>
+    .form-group h3 p{
+      text-align: left;
+      margin-left: 40%;
+    }
+    .form-group h3 p label{
+      width: 80px;
+    }
+
+    a:link {
+      text-decoration: none;
+    }
+
+    .note {
+      text-align: center;
+      height: 80px;
+      background: #0F2027;  /* fallback for old browsers */
+      background: -webkit-linear-gradient(to left, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to left, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      color: #fff;
+      font-weight: bold;
+      line-height: 80px;
+    }
+
+    .form-content {
+      padding: 5%;
+      border: 1px solid #ced4da;
+      margin-bottom: 2%;
+    }
+
+    .form-control {
+      border-radius: 1.5rem;
+    }
+
+    .btnSubmit {
+      border: none;
+      border-radius: 1.5rem;
+      padding: 1%;
+      width: 20%;
+      cursor: pointer;
+      background: #009414;
+      color: #fff;
+    }
+
+    .menu {
+      top: 50px;
+    }
+    .fgg {
+      width: 40%;
+    }
+    
+  </style>
+
+</head>
+
+<body style="background-color: #B3E5FC;">
+
+  {%if request.user.is_authenticated%}
+    {% include "ecom/customer_navbar.html" %}
+  {%else%}
+    {% include "ecom/navbar.html" %}
+  {%endif%}
+
+  <center>
+    <h3 class='alert alert-success'>Send Us Your Valuable Feedback !</h3>
+
+    <!-- <form method="POST">
+      {% csrf_token %}
+      <div class="form-group">
+        <p>
+        <h3 style="font-size: 15px;">{{ form.as_p }}</h3>
+        </p>
+        <br>
+        <input type="submit" value="Send Message" class='btn btn-primary btn-lg'>
+      </div>
+
+
+
+
+      <div class="form-group">
+        <label for="">Full Name</label>
+        {% render_field ContactusForm.name class="form-control" placeholder="Name" %}
+      </div>
+      <div class="form-group">
+        <label for="">E-mail</label>
+        {% render_field ContactusForm.email class="form-control" placeholder="Email" %}
+      </div>
+      <div class="form-group">
+        <label for="">Your Message</label>
+        {% render_field ContactusForm.feedback class="form-control" placeholder="Your Message" %}
+      </div>
+      <button type="submit" class="btnSubmit">Submit</button>
+    </form> -->
+
+
+    <form method="post" enctype="multipart/form-data">
+      {% csrf_token %}
+      <div class="container register-form">
+        <div class="form">
+          <div class="form-content">
+            <div class="row">
+              <div class="fgg">
+                <div class="form-group">
+                  <label for="">Full Name</label>
+                  {% render_field contactusForm.name class="form-control" placeholder="Name" %}
+                </div>
+                <div class="form-group">
+                  <label for="">E-mail</label>
+                  {% render_field contactusForm.email class="form-control" placeholder="Email" %}
+                </div>
+                <div class="form-group">
+                  <label for="">Your Message</label>
+                  {% render_field contactusForm.feedback class="form-control" placeholder="Your Message" %}
+                </div>
+              </div>
+            </div>
+            <button type="submit" class="btnSubmit">ADD</button>
+          </div>
+        </div>
+      </div>
+    </form>
+    <!-- <input type="submit" value="Send Message" onclick="alert('Feedback Sent Succesfully.')" class='btn btn-primary btn-lg' style="margin-bottom: 50px;"> -->
+    
+  </center>
+  {% include "ecom/footer.html" %}
+</body>
+
+
+</html>

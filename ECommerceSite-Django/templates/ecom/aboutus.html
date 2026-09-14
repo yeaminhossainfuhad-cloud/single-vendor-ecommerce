@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Computer Accessories Shop - About Us</title>
+  <style media="screen">
+    .footer{
+      position: fixed;
+    }
+    .abu p {
+      text-align: left;
+    }
+    .abu .abuq{
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body style="background-color:#f7f7f7;">
+  {%if request.user.is_authenticated%}
+    {% include "ecom/customer_navbar.html" %}
+  {%else%}
+    {% include "ecom/navbar.html" %}
+  {%endif%}
+  <br>
+  <h1 style="text-align: center;">About Us</h1>
+  <div style="width: 80%; margin-left: 10%; text-align: left;" class="abu">
+    <p style="font-size: 18px;">Welcome to Computer Accessories Shop, your trusted destination for high-quality computer accessories! We are passionate about helping you create the perfect setup, whether you're a tech enthusiast, a professional, or a gamer. <br>
+      Our mission is simple: to provide you with the best products, expert advice, and exceptional customer service. With a wide range of accessories, from keyboards and mice to monitors, cables, and storage devices, we’re here to enhance your computing experience.</p>
+    <br>
+    <h3 style="font-weight: bold; margin-bottom: 30px;">Frequently Asked Questions:</h3>
+    <h4 class="abuq">Q: What types of products do you offer?</h4>
+    <h4>A: We offer a diverse selection of computer accessories, including ergonomic keyboards, gaming mice, high-resolution monitors, external storage solutions, and more. Whether you're upgrading your workstation or setting up a new gaming rig, we have the tools you need.</h4>
+    <h4 class="abuq">Q: Do you provide warranties on your products?</h4>
+    <h4>A: Yes, all our products come with a manufacturer’s warranty, and we offer additional support to ensure your satisfaction.</h4>
+    <h4 class="abuq">Q: Can I get help choosing the right accessory for my needs?</h4>
+    <h4>A: Absolutely! Our knowledgeable team is always available to help you find the perfect products based on your preferences and requirements.</h4>
+    <h4 class="abuq">Q: Do you sell products for gamers specifically?</h4>
+    <h4>A: Yes, we have a dedicated range of gaming accessories, including mechanical keyboards, RGB mice, high-speed monitors, and gaming headsets.</h4>
+    <h4 class="abuq">Q: Do you offer discounts or special deals?</h4>
+    <h4>A: Yes! We frequently run promotions and offer bundle deals. Sign up for our newsletter to stay updated on our latest offers.</h4>
+    <h4 class="abuq">Q: Where are you located, and do you ship internationally?</h4>
+    <h4>A: Our store is located in Dhaka-Bangladesh, and we ship across the country. For international shipping options, feel free to contact our support team.</h4>
+    <hr>
+    <p style="font-size: 18px;">At Computer Accessories Shop, we don't just sell computer accessories; we aim to be your go-to partner for all things tech. Visit us in-store or explore our online shop to find products that fit your style and performance needs.</p>
+    <br>
+    <h4 class="abuq">Have more questions?</h4>
+    <h4>Feel free to reach out to us at <a href="/contactus">Contact Us</a>. We’re here to help!</h4>
+  </div>
+<br><br><br><br><br><br>
+  {% include "ecom/footer.html" %}
+</body>
+
+
+</html>
